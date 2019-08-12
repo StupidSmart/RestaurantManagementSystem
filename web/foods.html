@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FOODIE TRIBE FOODS</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+.button {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #2c9688;
+  border: none;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  
+  transform: translateY(4px);
+}
+input[type=email] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+ select {width: 100%;
+    padding: 4px 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1}
+</style></head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="index.jsp"><img src="images/logo1.png" alt="LOGO" height="100" width="190"></a>
+                                </div>
+                             <div id="login">
+                                
+                                 <form action="login.jsp" method="post">
+    
+
+                                
+                                <select name="user">
+                                <option value="customer">customer</option>
+                                <option value="admin">admin</option>
+                                <option value="staff">staff</option>
+                                </select>    
+                                <div>
+                                    <input type="email" required="required" name="email" placeholder="email" />
+                                </div>
+                                <input type="password"  required="required" name="pass" placeholder="password"/>
+                                 <div></div>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                                <button class="button">Login</button>
+                                </form>
+                             </div>
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="index.jsp">Home</a>
+						</li>
+						<li>
+                                                    <a href="restaurants.jsp">Restaurants</a>
+                                                </li>
+						<li class="selected">
+							<a href="foods.html">Food</a>
+						</li>
+                                                <li>
+							<a href="about.jsp">About</a>
+						</li>
+                                                
+						<li>
+							<a href="contact.jsp">Feedback</a>
+						</li>
+                                                <li>
+							<a href="registration.jsp">Join Us</a>
+						</li>
+					</ul>
+				</div>
+		
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>Food</h1>
+							<ul id="foods">
+								<li>
+									<h2><a href="foods.html">SeaFood Special</a></h2>
+									<div class="infos">
+										<a href="foods.html"><img src="images/seafoods.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<p>
+											<span>Fried Salmon Special</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
+										</p>
+									</div>
+								</li>
+								<li>
+									<h2><a href="foods.html">Sumptuous Desserts</a></h2>
+									<div class="infos">
+										<a href="foods.html"><img src="images/desserts.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<p>
+											<span>Choco Ice Cream Sandwich</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
+										</p>
+									</div>
+								</li>
+								<li>
+									<h2><a href="foods.html">Buffet</a></h2>
+									<div class="infos">
+										<a href="foods.html"><img src="images/buffet.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<p>
+											<span>Mixed Buffet</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+                </div>
+		<div id="footer">
+			<div>
+				<ul class="navigation">
+					<li>
+						<a href="index.jsp">Home</a>
+					</li>
+                                        
+					<li>
+						<a href="restaurants.jsp">Restaurants</a>
+					</li>
+                                        
+					<li class="active">
+						<a href="foods.html">Food</a>
+					</li>
+                                        <li>
+						<a href="about.jsp">About</a>
+					</li>
+					
+					<li>
+						<a href="contact.jsp">Feedback</a>
+					</li>
+                                        <li>
+                                            <a href="registration.jsp">Join Us</a>
+					</li>
+				</ul>
+				<div id="connect">
+					<a href="https://in.pinterest.com/search/pins/?q=foodie&rs=typed&term_meta[]=foodie%7Ctyped" target="_blank" class="pinterest"></a> <a href="https://www.facebook.com/groups/Foodie.msr/" target="_blank" class="facebook"></a> <a href="https://twitter.com/foodiehk?lang=en-in" target="_blank" class="twitter"></a> <a href="https://plus.google.com/communities/108384192707454831249" target="_blank" class="googleplus"></a>
+				</div>
+			</div>
+                    <p id="yo">
+                            © RAHUL RUPANI FOODIE. All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
